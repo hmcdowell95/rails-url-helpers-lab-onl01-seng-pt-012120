@@ -15,6 +15,7 @@ class StudentsController < ApplicationController
     else
       @student.active = false 
     end
+    redirect "/students/:id"
   end
   
   private
